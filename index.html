@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link href="assets/css/bootstrrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Chengyang Huang's Website</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -39,7 +41,7 @@
             </li>
 
             <li class = "nav_item">
-              <a herf="cv.html">CV</a>
+              <a href = "assets/CV_V2_1.pdf">CV</a>
             </li>
 
           </ul>
@@ -48,10 +50,16 @@
 
       <header class="header">
         <div class="container">
-          <div class = "header_container">
-            <h1>Chengyang Huang</h1>
-            <p class = "dark">Machine Learning Engineer & Roboticist</p>
-          </div>
+            <div class = "header_container">
+              <div>
+                <h1>Chengyang Huang</h1>
+              </div>
+              <div class="header-subarea">
+                <p class = "dark sub-title">Machine Learning Engineer & Roboticist</p>
+                <p class = "dark mono email">[chengyah at umich dot edu]</p>
+                <!-- <p class="dark aboutme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
+              </div>
+            </div>
         </div>
       </header>
 
@@ -107,8 +115,10 @@
                 </div>
 
                 <div class="content-about-text">
-                  <p>#machinelearning</p>
-                  <p>#control</p>
+                  <p class="rcorners mono">#DeepLearning</p>
+                  <p class="rcorners mono">#BayesianInference</p>
+                  <p class="rcorners mono">#Controls</p>
+                  <p class="rcorners mono">#Robotics</p>
                 </div>
 
 
@@ -122,15 +132,79 @@
 
                 <div class="content-about-text">
 
-                  <div class="content-about-text-section">
-                    <h6>University of Michigan, 2021 to present</h6>
+                    <!-- Ph.D -->
+                    <div class="content-about-education">
 
-                    <div class="section-education">
-                      <p class="bold">PhD student in Mechanical Engineering</p>
-                      <p>Focus: Signal & Image Processing and Machine Learning</p>
+                      <div class="degree">
+                        <p>Prospective Ph.D.</p>
+                      </div>
+                      <div class="major">
+                        <p>Mechanical Engineering</p>
+                      </div>
+                      <div class="school">
+                        <p>University of Michigan</p>
+                      </div>
+                      <div class="date">
+                        <p>Present</p>
+                      </div>
+
                     </div>
 
-                    <h6>University of Michigan, 2020</h6>
+                    <!-- M.S -->
+                    <div class="content-about-education">
+                      <div class="degree">
+                        <p>M.S</p>
+                      </div>
+                      <div class="major">
+                        <p>Electrical and Computer Engineering</p>
+                      </div>
+                      <div class="school">
+                        <p>University of Michigan</p>
+                      </div>
+                      <div class="date">
+                        <p>2020</p>
+                      </div>
+                    </div>
+
+                    <!-- M.S.E -->
+                    <div class="content-about-education">
+                      <div class="degree">
+                        <p>M.S.Eng.</p>
+                      </div>
+                      <div class="major">
+                        <p>Mechanical Engineering</p>
+                      </div>
+                      <div class="school">
+                        <p>University of Michigan</p>
+                      </div>
+                      <div class="date">
+                        <p>2020</p>
+                      </div>
+                    </div>
+                    <!-- B.S.E -->
+                    <div class="content-about-education">
+                      <div class="degree">
+                        <p>B.S.Eng.</p>
+                      </div>
+                      <div class="major">
+                        <p>Mechanical Engineering</p>
+                      </div>
+                      <div class="school">
+                        <p>University of Michigan</p>
+                      </div>
+                      <div class="date">
+                        <p>2018</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                    <!-- <div class="section-education">
+                      <p class="bold">PhD student in Mechanical Engineering</p>
+                      <p>Focus: Signal & Image Processing and Machine Learning</p>
+                    </div> -->
+
+                    <!-- <h6>University of Michigan, 2020</h6>
 
                     <div class="section-education">
                       <p class="bold">M.S. in Electrical & Computer Engineering</p>
@@ -148,11 +222,8 @@
                         <p class="bold">B.S. in Mechanical Engineering</p>
                         <p>Focus: Mechatronics & Controls</p>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                    </div> -->
 
-              </div>
               <!-- Projects -->
               <div class="content-grid-about">
 
@@ -166,7 +237,7 @@
 
                     <div class="section-small">
                       <p><a href="project1.html">Domain Generalization via Ensemble Method for Microbes</a></p>
-                      <p>This project aims to develop an ensemble method for the domain generalization problem and apply it to predict interactions between nanoparticles and microbes.</p>
+                      <!-- <p>This project aims to develop an ensemble method for the domain generalization problem and apply it to predict interactions between nanoparticles and microbes.</p> -->
                     </div>
 
 
@@ -175,8 +246,8 @@
                   <div class="content-about-text-section">
 
                     <div class="section-small">
-                      <p><a href="project2.html">Generative Adversarial Networks (GANs) for Parameter Estimation</a></p>
-                      <p>This is a proof-of-concept project of developing a generative model using GANs to estimate the parameter distribution from experimental measurements, which can be further applied to various engineering problems (e.g. mechanical, aerospace, biomedical). Current results show that this method is about 10 times faster than MCMC with similar performance in a test problem. </p>
+                      <p><a href="project2.html">Fast Approximation Bayesian Inference via Generative Adversarial Networks</a></p>
+                      <!-- <p>This is a proof-of-concept project of developing a generative model using GANs to estimate the parameter distribution from experimental measurements, which can be further applied to various engineering problems (e.g. mechanical, aerospace, biomedical). Current results show that this method is about 10 times faster than MCMC with similar performance in a test problem. </p> -->
                     </div>
 
 
@@ -186,9 +257,9 @@
 
               </div>
               <!-- Skills&tools -->
-              <div class="content-grid-about">
+              <!-- <div class="content-grid-about">
 
-                <div class="content-about-label">
+                <!-- <div class="content-about-label">
                   <h5>Skills & Tools</h5>
                 </div>
 
@@ -208,9 +279,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
-              </div>
+              <!-- </div> -->
 
 
               <!-- Teaching -->
@@ -220,11 +291,12 @@
                 </div>
 
                 <div class="content-about-text">
-                  <h6>Mechanical Engineering Department, University of Michigan</h6>
+                  <h6>Mechanical Engineering, University of Michigan</h6>
                   <div class="section-small">
-                    <p class="bold">Introduction to Finite Elements in Mechanical Engineering </p>
+                    <p class="bold">Introduction to Finite Elements in Mechanical Engineering</p>
+                    <p class="bold">Graduate Student Instructor</p>
                     <p>Fall 2018, Fall 2019 with <a href="https://me.engin.umich.edu/people/faculty/greg-hulbert">Greg Hulbert</a> and <a href="https://me.engin.umich.edu/people/faculty/xun-ryan-huanXun"> Xun Huan</a> </p>
-                    <p>Winter 2019 with <a href="https://me.engin.umich.edu/people/faculty/greg-hulbert">Greg Hulbert</a> and <a href="https://me.engin.umich.edu/people/faculty/greg-hulbert">Shane Johnson</a> </p>
+                    <p>Winter 2019 with <a href="https://me.engin.umich.edu/people/faculty/greg-hulbert">Greg Hulbert</a> and <a href="https://www.ji.sjtu.edu.cn/about/faculty-staff/faculty-directory/faculty-detail/95/">Shane Johnson</a> </p>
                     <p>Winter 2020 with <a href="https://me.engin.umich.edu/people/faculty/greg-hulbert">Greg Hulbert</a> </p>
 
                   </div>
